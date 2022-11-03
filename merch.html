@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>FDP-Merch</title>
+	
+	
+<script>
+function on() {
+  document.getElementById("overlay1").style.display = "block";
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay1").style.display = "none";
+  document.getElementById("overlay2").style.display = "none";
+}
+	
+</script>
+		<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+	
+<div id="header"></div>
+	
+	<main>
+<div class="header">
+		
+	<video id="Merch" autoplay loop muted plays-inline class="video-fondo">
+		<source src="img/video.mp4" type="video/mp4">
+    </video>
+<div id="grid-container">
+		<button onclick="on()"><img src="img/cuadernillo1.jpg" alt="#"></button>
+		<button onclick="on()"><img src="img/cuadernillo2.jpg" alt="#"></button>
+		<div class="grid-item"><img src="img/cuadernillo3.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo4.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo1.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo2.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo3.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo4.jpg" alt="#"></div>
+		<div class="grid-item"><img src="img/cuadernillo1.jpg" alt="#"></div>
+	
+	
+
+
+	
+</div>
+	
+	<div id="overlay1" onclick="off()">
+		<div><img id="item1" src="img/cuadernillo1.jpg" alt="#"></div>
+	</div>
+	
+	<div id="overlay2" onclick="off()">
+		<div><img id="item2" src="img/cuadernillo2.jpg" alt="#"></div>
+	</div>
+	
+</div>
+
+	</main>
+	
+	<div id="footer"></div>
+	
+</body>
+</html>

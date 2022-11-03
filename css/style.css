@@ -1,0 +1,290 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh
+}
+header {
+  margin: 0px;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  padding: 60px;
+  position: sticky;
+  top: 0px;
+  z-index: 100
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+main div {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main div#carrusel div {
+	height: 500px;
+	width: 1200px;
+}
+
+main div#carrusel img{
+	height: 100%;
+	width: auto;
+	margin: auto;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 15px;   
+}
+footer nav ul {
+  list-style: none
+}
+footer nav ul li {
+  color: #000000;
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+  background-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(15, 103, 100, 0.3), rgba(25, 45, 128, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 90px;
+}
+#logofooter {
+  height: 90px;
+  filter: invert()
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 17px;
+  border: 0px none black;
+  float: left;
+  padding: 10px 15px 10px 15px;
+  border-radius: 100px;
+  background-color: #229389
+}
+
+.contenido, #merch {
+  text-align: center;
+}
+.contenido h1, #merch h1{
+  font-size: 160px;
+  color: whitesmoke;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.contenido h1:hover, #merch h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.contenido a{
+  text-decoration: none;
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 24px;
+  border: 2px solid whitesmoke;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#merch a{
+  text-decoration: none;
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 24px;
+  padding: 14px 70px;
+  margin-top: 20px;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+}
+@media (min-aspect-ratio:16/9) {
+  .video-fondo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9) {
+  .video-fondo {
+    width: auto;
+    height: 100%;
+  }
+}
+.textoheader {}
+.mapa {
+  border-radius: 14px;
+  border: thick dashed #E52225;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+#grid-container{
+	display: grid;
+	grid-template-columns:auto auto auto;
+}
+
+.grid-item img, button img{
+	padding: 25px;
+	width: 300px;
+	height: auto;
+}
+
+#overlay1, #overlay2, overlay3, overlay4, overlay5, overlay6, overlay7, overlay8, overlay9 {
+	position:fixed;	
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+	
+}
+
+
+#item1, #item2, item3, item4, item5, item6, item7, item8, item9{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%,-50%);
+}
+
+.pagos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #229389, #27ae60 40.1%);
+  }
+  
+  .pagos form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .pagos form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .pagos form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .pagos form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .pagos form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .pagos form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .pagos form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .pagos form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .pagos form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .pagos form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .pagos form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .pagos form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #229389;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .pagos form .submit-btn:hover{
+    background: #229389;
+  }
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>FDP-Ubicacion</title>
+		<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+	
+	<div id="header"></div>
+	
+	<main>
+				  <div class="header">
+    <video id="Ubicacion" autoplay loop muted plays-inline class="video-fondo">
+        <source src="img/ubicacion.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="contenido">
+        <h1>Ubicación</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.936740666152!2d-58.519799899999995!3d-34.479129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb044416b9057%3A0x4e2b14474211a5f4!2sAcceso%20A%20Hipodromo%20de%20San%20Isidro%2C%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665668316195!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        <a herf="#">Entradas</a>
+    </div>
+   </div>
+	</main>
+	
+	<div id="footer"></div>
+</body>
+</html>
