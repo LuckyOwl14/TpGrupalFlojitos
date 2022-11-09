@@ -7,19 +7,16 @@
     <link rel="icon" href="img/favicon.ico">
     <title>FDP-Merch</title>
 	
-	
 <script>
-function on() {
-  document.getElementById("overlay1").style.display = "block";
-  document.getElementById("overlay2").style.display = "block";
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
-
-function off() {
-  document.getElementById("overlay1").style.display = "none";
-  document.getElementById("overlay2").style.display = "none";
-}
-	
 </script>
+	
 		<script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -42,30 +39,39 @@ $(function(){
 	<video id="Merch" autoplay loop muted plays-inline class="video-fondo">
 		<source src="img/video.mp4" type="video/mp4">
     </video>
-<div id="grid-container">
-		<button onclick="on()"><img src="img/cuadernillo1.jpg" alt="#"></button>
-		<button onclick="on()"><img src="img/cuadernillo2.jpg" alt="#"></button>
-		<div class="grid-item"><img src="img/cuadernillo3.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo4.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo1.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo2.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo3.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo4.jpg" alt="#"></div>
-		<div class="grid-item"><img src="img/cuadernillo1.jpg" alt="#"></div>
-	
-	
 
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img/Merch1.jpeg" alt="Comprar" onclick="myFunction(this);">
+    <img src="img/Merch2.jpeg" alt="Comprar" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Merch3.jpeg" alt="Comprar" onclick="myFunction(this);">
+    <img src="img/Merch4.jpeg" alt="Comprar" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Merch5.jpeg" alt="Comprar" onclick="myFunction(this);">
+    <img src="img/Merch6.jpeg" alt="Comprar" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Merch7.jpeg" alt="Comprar" onclick="myFunction(this);">
+    <img src="img/Merch8.jpeg" alt="Comprar" onclick="myFunction(this);">
+  </div>
+</div>
 
-	
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+ <img id="expandedImg" style="width:100%" alt="Comprar">
+
+  <!-- Image text -->
+  <a href="pagar.html"><div id="imgtext"></div></a>
 </div>
 	
-	<div id="overlay1" onclick="off()">
-		<div><img id="item1" src="img/cuadernillo1.jpg" alt="#"></div>
-	</div>
-	
-	<div id="overlay2" onclick="off()">
-		<div><img id="item2" src="img/cuadernillo2.jpg" alt="#"></div>
-	</div>
 	
 </div>
 
