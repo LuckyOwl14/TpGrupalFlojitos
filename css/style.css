@@ -339,3 +339,55 @@ header nav ul li a {
 	width: 1000px;
 	object-fit: cover;
 }
+
+/* Donaciones */
+
+.Donar{
+	display: flex;
+	background-color:transparent;
+	width: 100%;
+	height: 30%;
+	flex-direction: row;
+	justify-content: center;
+	margin: 30px;
+}
+
+.Dono1{
+	background-color: aquamarine;
+	padding: 25px;
+	border: solid black 5px;
+	border-radius: 50px;
+	width: 30vh;
+	height: auto;
+	margin: 50px;
+
+}
+
+.Dono1 img{
+	height: auto;
+	width: 100px;
+	margin-top:10px; 
+	margin-bottom: 10px;
+}
+
+.Dono1 a {
+	background-color: lightgray;
+	padding: 5px;
+	border: solid gray 2px;
+	margin-top: 15px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+#TitDon{
+  font-size: 75px;
+  color: whitesmoke;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+#TitDon:hover{
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
