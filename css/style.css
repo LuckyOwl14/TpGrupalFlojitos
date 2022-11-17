@@ -111,6 +111,27 @@ header nav ul li a {
   border-radius: 100px;
   background-color: #229389
 }
+.actividades{
+transition: 0.3s;
+width: 20%;
+height: 300px;
+object-fit: cover;
+}
+
+.actividades:hover{
+width: 25%;
+	}
+
+.acts{
+	background-color: aquamarine;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
 
 .contenido, #merch {
   text-align: center;
@@ -384,14 +405,14 @@ header nav ul li a {
 	text-decoration: none;
 }
 
-#TitDon{
+.TitDon{
   font-size: 75px;
   color: whitesmoke;
   font-weight: 600;
   transition: 0.5s;
 }
 
-#TitDon:hover{
+.TitDon:hover{
 	-webkit-text-stroke: 2px #fff;
 	color: transparent;
 }
